@@ -4,8 +4,8 @@ provider "aws" {
 }
 
 # Default security group to access the instance and provide Internet access
-resource "aws_security_group" "prod_sg" {
-  name        = "prod_sg"
+resource "aws_security_group" "prod_sgMKG" {
+  name        = "prod_sgMKG"
   description = "Prod Security Group"
 
   # RDP access from anywhere
