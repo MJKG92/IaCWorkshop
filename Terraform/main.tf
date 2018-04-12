@@ -36,10 +36,10 @@ resource "aws_instance" "windows1" {
   key_name = "${var.key_name}"
 
   # Our Security group to allow WinRM access
-  security_groups = ["${aws_security_group.prod_sg.id}"]
+  security_groups = ["${aws_security_group.prod_sgMKG.id}"]
 
   tags = {
-      Name = "${var.instance_name}"
+    Name = "${var.instance_name}"
   }
 
   # EC2 User Data
